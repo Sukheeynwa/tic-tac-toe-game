@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Tic-Tac-Toe game</title>
+	<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+	<script src="script.js" defer></script>
+	<dialog open id="start-dialog">
+		<form action="" method="get">
+			<h2>PICK PLAYER 1'S MARKER</h2>
+			<div>
+				<button type="button" id="buttonX">x</button>
+				<button type="button" id="buttonO">o</button>
+			</div>
+			<button type="button" id="button-start">Start the Game</button>
+		</form>
+	</dialog>
+	<div id="turn-module"></div>
+	<div id="game-board">
+		<div id="game-cell"></div>
+		<div id="game-cell"></div>
+		<div id="game-cell"></div>
+		<div id="game-cell"></div>
+		<div id="game-cell"></div>
+		<div id="game-cell"></div>
+		<div id="game-cell"></div>
+		<div id="game-cell"></div>
+		<div id="game-cell"></div>
+	</div>
+	<div id="score-container">
+		<div id="player1-score-container">
+			<p>Player 1</p>
+			<div id="player1-score">0</div>
+		</div>
+		<div id="player2-score-container">
+			<p>Player 2</p>
+			<div id="player2-score">0</div>
+		</div>
+	</div>
+	<dialog id="result-dialog">
+		<p id="result-message"></p>
+		<button id="reset-button">RESET GAME</button>
+	</dialog>
+</body>
+</html>
